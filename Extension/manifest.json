@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Copy Conversation",
+  "version": "1.0.0",
+  "description": "Copies AI conversations into a clean question and answer format.",
+
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "clipboardWrite"
+  ],
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Copy Conversation"
+  }
+}

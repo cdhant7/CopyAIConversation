@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Copy Conversation</title>
+
+    <link rel="stylesheet" href="css/popup.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <header class="app-header">
+            <div class="brand">
+                <div class="brand-icon">
+                    <svg viewBox="0 0 24 24"
+                         aria-hidden="true">
+                        <path d="M8 7.5A2.5 2.5 0 0 1 10.5 5h7A2.5 2.5 0 0 1 20 7.5v9a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 8 16.5v-9Z" />
+                        <path d="M6 15H5.5A2.5 2.5 0 0 1 3 12.5v-6A2.5 2.5 0 0 1 5.5 4h7A2.5 2.5 0 0 1 15 6.5V7" />
+                    </svg>
+                </div>
+
+                <div class="brand-text">
+                    <h1>Copy Conversation</h1>
+                    <p>Export AI chats in one click</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="controls">
+
+            <div class="format-card">
+                <div class="format-info">
+                    <span class="format-title">
+                        Markdown formatting
+                    </span>
+
+                    <span class="format-description">
+                        Preserve headings, lists, code and links
+                    </span>
+                </div>
+
+                <label class="switch">
+                    <input type="checkbox"
+                           id="markdownMode">
+
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+
+            <button id="copyButton"
+                    type="button">
+                <span class="button-icon">
+                    <svg viewBox="0 0 24 24"
+                         aria-hidden="true">
+                        <rect x="8"
+                              y="8"
+                              width="11"
+                              height="11"
+                              rx="2" />
+
+                        <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" />
+                    </svg>
+                </span>
+
+                <span>
+                    Copy Conversation
+                </span>
+            </button>
+
+        </section>
+
+
+        <section class="preview-section">
+
+            <div class="section-header">
+                <label for="preview">
+                    Preview
+                </label>
+
+                <span class="preview-hint">
+                    Copied content
+                </span>
+            </div>
+
+            <div class="preview-wrapper">
+                <textarea id="preview"
+                          readonly
+                          spellcheck="false"
+                          placeholder="Your conversation preview will appear here..."></textarea>
+            </div>
+
+        </section>
+
+
+        <footer class="app-footer">
+            <span>
+                Supports ChatGPT, Claude, Gemini & Copilot
+            </span>
+        </footer>
+
+    </main>
+
+
+    <script src="js/popup.js"></script>
+
+</body>
+</html>
